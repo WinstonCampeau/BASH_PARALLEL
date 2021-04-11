@@ -22,13 +22,13 @@ print(output_name)
 
 Where, sys.argv[1] == $counter.
 
-Otherwise, all you need to know are how the script prompts work. First you will be asked how many runs, and then how many processes. How many processes means how many threads you would like your CPU to use. For example, I originally wrote this script to run on a Ryzen 7 3800X which has 16 threads available. So, if I wanted to utilize all the threads available on that CPU I would enter "16". How many runs is how many times you want that process to repeat. So, if you wanted a total of 32 processes on a Ryzen 3800X, you would select 2 runs and 16 processes. 
+Otherwise, all you need to know are how the script prompts work. First you will be asked how many runs, and then how many processes. How many processes means how many threads of your CPU you would like to use. For example, I originally wrote this script to run on a Ryzen 7 3800X which has 16 threads available. So, if I wanted to utilize all the threads available on that CPU I would enter "16". How many runs is how many times you want that process to repeat. So, if you wanted a total of 32 processes on a Ryzen 3800X, you could select 2 runs and 16 processes.
 
-Say we replaced "test_script.py" with "your_program.py". Then in terminal we ran
+Say we replaced "test_script.py" with "your_program.py". Then in terminal we ran,
 
 'bash bash_parallel.sh'
 
-And answered the prompt as follows,
+and answered the prompt as follows,
 
 ```
 How many runs?
@@ -53,3 +53,4 @@ run6
 run7
 ```
 
+And that's it!
