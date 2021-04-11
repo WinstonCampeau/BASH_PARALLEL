@@ -29,7 +29,7 @@ while [ $counter -lt $total_runs ]
 	
 	while [ $thread_counter -lt $var_1 ]
 		do
-			python3 LEVY_BH.py $counter &
+			python3 your_program.py $counter &
 			pids+=( $! )
 			counter=$(($counter + 1))
 			thread_counter=$(($thread_counter + 1))
