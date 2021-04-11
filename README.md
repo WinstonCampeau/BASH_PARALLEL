@@ -7,7 +7,7 @@ First you need to edit line 32 to your needs. By default it is:
 
 `python3 your_program.py $counter &`
 
-Thus, the script is set byt default to run a python3 script, and will send $counter to the script to differentiate your outputs. For example, say you want 32 processes running in parallel, $counter will send (0, 1, ... , 31) to each of the individual processes. Now, say your program outputs csv files, then you could label each csv as "run0", "run1", ... "run31". To use $counter in ptyhon you would do something like:
+Thus, the script is set by default to run a python3 script, and will send $counter to the script to differentiate your outputs. For example, say you want 32 processes running in parallel, $counter will send (0, 1, ... , 31) to each of the individual processes. Now, say your program outputs csv files, then you could label each csv as "run0", "run1", ... "run31". To use $counter in ptyhon you would do something like:
 
 ```
 # test_script.py
